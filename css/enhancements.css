@@ -1,0 +1,149 @@
+/* ============================================
+   Visual depth enhancements — dark mode only
+   Loaded on every page after all other stylesheets.
+   Makes cards feel like they float above the animated
+   background instead of sitting as flat rectangles.
+   ============================================ */
+
+/* Frosted glass nav bars, so scrolled content softly shows through */
+[data-theme="dark"] .navbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+@media (min-width: 671px) {
+  [data-theme="dark"] .navbar .nav-menu {
+    background: transparent !important;
+  }
+}
+
+@media (max-width: 670px) {
+  [data-theme="dark"] .navbar .nav-menu {
+    background: rgba(17, 17, 17, 0.9) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+  }
+}
+
+[data-theme="dark"] .pw-topbar {
+  background: rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Homepage project grid cards: keep their own background images intact,
+   just add ambient lift and a soft blue-tinted glow */
+[data-theme="dark"] .card {
+  border: 1px solid rgba(47, 123, 224, 0.16);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(47, 123, 224, 0.05);
+}
+
+[data-theme="dark"] .card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    inset 0 100px 1000px 10px rgba(0, 0, 0, 0.8),
+    0 16px 40px rgba(31, 100, 201, 0.25),
+    0 0 0 1px rgba(47, 123, 224, 0.35);
+}
+
+/* Experience cards: glassy, floating panels */
+[data-theme="dark"] .exp-card {
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(47, 123, 224, 0.16);
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(47, 123, 224, 0.04);
+  transition: box-shadow 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+}
+
+[data-theme="dark"] .exp-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(47, 123, 224, 0.4);
+  box-shadow: 0 18px 46px rgba(31, 100, 201, 0.22), 0 0 0 1px rgba(47, 123, 224, 0.15);
+}
+
+/* Timeline content cards (education) get the same treatment */
+[data-theme="dark"] .timeline-content {
+  background: rgba(17, 17, 17, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(47, 123, 224, 0.16);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(47, 123, 224, 0.04);
+  transition: box-shadow 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+}
+
+[data-theme="dark"] .timeline-content:hover {
+  transform: translateY(-3px);
+  border-color: rgba(47, 123, 224, 0.4);
+  box-shadow: 0 18px 46px rgba(31, 100, 201, 0.22), 0 0 0 1px rgba(47, 123, 224, 0.15);
+}
+
+/* Project page: problem cards, recommendation cards, screenshots */
+[data-theme="dark"] .pw-prob-card,
+[data-theme="dark"] .pw-rec-card {
+  background: rgba(17, 17, 17, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(47, 123, 224, 0.05);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .pw-prob-card:hover,
+[data-theme="dark"] .pw-rec-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(31, 100, 201, 0.2), 0 0 0 1px rgba(47, 123, 224, 0.2);
+}
+
+[data-theme="dark"] .pw-screenshot {
+  box-shadow: 0 10px 34px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="dark"] .pw-screenshot:hover {
+  box-shadow: 0 16px 44px rgba(31, 100, 201, 0.22);
+}
+
+/* KPI, insight, and mini cards across every project page
+   (Kmart, EDR, Blackmores, Netflix, Dark Store prefixes) */
+[data-theme="dark"] .pk-kpi-card,
+[data-theme="dark"] .pe-kpi-card,
+[data-theme="dark"] .pbm-kpi-card,
+[data-theme="dark"] .pnf-kpi-card,
+[data-theme="dark"] .pds-kpi-card,
+[data-theme="dark"] .pk-insight-card,
+[data-theme="dark"] .pe-insight-card,
+[data-theme="dark"] .pbm-insight-card,
+[data-theme="dark"] .pnf-insight-card,
+[data-theme="dark"] .pds-insight-card,
+[data-theme="dark"] .pk-mini-card,
+[data-theme="dark"] .pbm-mini-card,
+[data-theme="dark"] .pnf-mini-card,
+[data-theme="dark"] .pds-mini-card {
+  background: rgba(17, 17, 17, 0.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(47, 123, 224, 0.05);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .pk-kpi-card:hover,
+[data-theme="dark"] .pe-kpi-card:hover,
+[data-theme="dark"] .pbm-kpi-card:hover,
+[data-theme="dark"] .pnf-kpi-card:hover,
+[data-theme="dark"] .pds-kpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(31, 100, 201, 0.2), 0 0 0 1px rgba(47, 123, 224, 0.25);
+}
+
+/* Footer: subtle top glow line instead of a hard flat edge */
+[data-theme="dark"] footer {
+  position: relative;
+}
+
+[data-theme="dark"] footer::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(47, 123, 224, 0.4), transparent);
+}

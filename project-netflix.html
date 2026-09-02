@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Viewing Analytics | Abdullah Al Yubraj</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/project-woolies.css" />
+    <link rel="stylesheet" href="css/project-netflix.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <div class="page-transition page-transition--enter"></div>
+
+    <!-- Top bar -->
+    <div class="pw-topbar">
+      <a href="index.html" class="back-btn transition-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="pw-hero pw-light">
+      <div class="pw-container">
+        <div class="pw-hero__eyebrow">Project Title</div>
+        <h1 class="pw-hero__title">Netflix<br><span class="pw-accent">Viewing Analytics</span></h1>
+        <p class="pw-hero__sub">A personalised "watch next" recommender built from real subscriber viewing data — check off what you've already watched, and it suggests what to try next based on how strongly your picks correlate with other titles in other subscribers' viewing habits.</p>
+        <div class="pw-hero__row">
+          <div class="pw-hero__tags">
+            <span class="tag">Excel</span>
+            <span class="tag">Correlation Analysis</span>
+            <span class="tag">Pivot Tables</span>
+            <span class="tag">Recommendation Engine</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Data Visualisation</span>
+          </div>
+          <a href="https://github.com/yuvrajabdullah99/Netflix-Viewing-Analytics" target="_blank" class="btn btn-primary">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">Visual Analysis</span>
+        <h2 class="pw-heading">Dashboard Preview</h2>
+        <div class="pw-screenshots">
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/netflix-watch-next.png" alt="Watch Next Recommendation App" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Watch Next Recommender</strong>
+              <p>Check off titles you've already watched, and the app ranks every remaining title by correlated viewing time, showing a match score, genre tags, and a plain-language reason for each recommendation.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/netflix-correlation-matrix.png" alt="Title Correlation Matrix Heatmap" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Title Correlation Matrix</strong>
+              <p>A 9×9 heatmap of Pearson correlation between titles' per-subscriber viewing time, ordered by genre group so titles that share an audience sit together on the diagonal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Summary -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">At a Glance</span>
+        <h2 class="pw-heading">Dataset Overview</h2>
+        <div class="pnf-kpi-grid">
+          <div class="pnf-kpi-card">
+            <div class="pnf-kpi-icon"><i class="fas fa-users"></i></div>
+            <div class="pnf-kpi-value">2,000</div>
+            <div class="pnf-kpi-label">Subscribers Tracked</div>
+          </div>
+          <div class="pnf-kpi-card">
+            <div class="pnf-kpi-icon"><i class="fas fa-film"></i></div>
+            <div class="pnf-kpi-value">9</div>
+            <div class="pnf-kpi-label">Titles Analysed</div>
+          </div>
+          <div class="pnf-kpi-card">
+            <div class="pnf-kpi-icon"><i class="fas fa-list-ol"></i></div>
+            <div class="pnf-kpi-value">18,000</div>
+            <div class="pnf-kpi-label">Raw Viewing Records</div>
+          </div>
+          <div class="pnf-kpi-card">
+            <div class="pnf-kpi-icon"><i class="fas fa-percentage"></i></div>
+            <div class="pnf-kpi-value">0.96</div>
+            <div class="pnf-kpi-label">Strongest Title Correlation</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Problem -->
+    <section class="pw-section pw-light">
+      <div class="pw-container pw-two-col">
+        <div>
+          <span class="pw-label">About This Project</span>
+          <h2 class="pw-heading">What Was Built & Why</h2>
+          <p class="pw-body">Rather than recommending by genre tags alone, this project measures actual co-viewing behaviour: how much time subscribers who watch one show also spend watching another. That signal is turned into a Pearson correlation matrix, which powers two complementary tools built on the same data.</p>
+          <p class="pw-body">Raw per-subscriber viewing logs were cleaned and aggregated in Excel — episodes watched × episode length — pivoted into a subscriber × show matrix, then correlated pairwise across all nine titles to reveal which shows are watched together.</p>
+          <ul class="pw-tool-list">
+            <li><i class="fas fa-check-circle"></i> Calculated Fields & Pivot Tables</li>
+            <li><i class="fas fa-check-circle"></i> Pearson Correlation Analysis</li>
+            <li><i class="fas fa-check-circle"></i> Live Match-Score Recommendation Engine</li>
+            <li><i class="fas fa-check-circle"></i> Interactive Correlation Heatmap (SVG)</li>
+            <li><i class="fas fa-check-circle"></i> Genre-Based Axis Ordering</li>
+            <li><i class="fas fa-check-circle"></i> Fully Static, Self-Contained Apps</li>
+          </ul>
+        </div>
+        <div>
+          <span class="pw-label">Problem Statement</span>
+          <h2 class="pw-heading">The Recommendation Challenge</h2>
+          <div class="pw-prob-cards">
+            <div class="pw-prob-card">
+              <i class="fas fa-tags"></i>
+              <div>
+                <h3>Genre Tags Miss Real Behaviour</h3>
+                <p>Recommending by genre alone ignores how audiences actually overlap — two dramas can have completely unrelated viewers.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-question-circle"></i>
+              <div>
+                <h3>No Transparent "Why"</h3>
+                <p>Generic recommenders rarely explain themselves, leaving subscribers unsure why a title was suggested to them.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-th"></i>
+              <div>
+                <h3>Audience Overlap Was Invisible</h3>
+                <p>There was no easy way to see, at a glance, which titles share an audience and which are watched by completely different subscribers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology + Key Findings -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <div class="pw-mf-grid">
+
+          <!-- Methodology -->
+          <div>
+            <span class="pw-label">Methodology</span>
+            <h2 class="pw-heading pw-heading--white">How It Was Built</h2>
+            <div class="pw-steps">
+              <div class="pw-step">
+                <div class="pw-step__num">01</div>
+                <div>
+                  <h3>Raw Data & Calculated Column</h3>
+                  <p>Per-subscriber, per-show viewing logs converted into total minutes watched (episodes watched × episode length).</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">02</div>
+                <div>
+                  <h3>Pivot & Descriptive Analysis</h3>
+                  <p>Minutes reshaped into a subscriber × show matrix, with average viewing time calculated per show across all subscribers.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">03</div>
+                <div>
+                  <h3>Correlation Matrix</h3>
+                  <p>Pearson correlation of total minutes watched computed between every pair of shows, revealing which titles are watched together.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">04</div>
+                <div>
+                  <h3>App Build</h3>
+                  <p>The correlation matrix, genre tags, and viewing stats embedded directly into two self-contained HTML pages — a recommender and a heatmap — with no server or external calls.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div>
+            <span class="pw-label">Key Findings</span>
+            <h2 class="pw-heading pw-heading--white">Viewing Pattern Insights</h2>
+            <div class="pnf-insights">
+              <div class="pnf-insight-card">
+                <div class="pnf-insight-num">01</div>
+                <div class="pnf-insight-body">
+                  <strong>Crime & Thriller Titles Cluster Tightly</strong>
+                  <p>You, Dexter, and Dahmer correlate at 0.92–0.95 — subscribers who watch one overwhelmingly watch the others too.</p>
+                </div>
+              </div>
+              <div class="pnf-insight-card">
+                <div class="pnf-insight-num">02</div>
+                <div class="pnf-insight-body">
+                  <strong>Supernatural Titles Are the Strongest Cluster</strong>
+                  <p>Dark and Umbrella Academy correlate at 0.96, with Stranger Things joining the cluster at 0.84–0.85.</p>
+                </div>
+              </div>
+              <div class="pnf-insight-card">
+                <div class="pnf-insight-num">03</div>
+                <div class="pnf-insight-body">
+                  <strong>K-Drama Romance Forms Its Own Audience</strong>
+                  <p>Queen Of Tears and It's Okay To Not Be Okay correlate at 0.87, but show almost no overlap with any other genre cluster.</p>
+                </div>
+              </div>
+              <div class="pnf-insight-card">
+                <div class="pnf-insight-num">04</div>
+                <div class="pnf-insight-body">
+                  <strong>Big Bang Theory's Audience Stands Alone</strong>
+                  <p>As the only sitcom in the set, it shows near-zero correlation with every other title — its viewers don't overlap meaningfully with any other genre.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pnf-mini-grid">
+              <div class="pnf-mini-card">
+                <i class="fas fa-user-secret"></i>
+                <span>Crime & Thriller</span>
+              </div>
+              <div class="pnf-mini-card">
+                <i class="fas fa-ghost"></i>
+                <span>Supernatural</span>
+              </div>
+              <div class="pnf-mini-card">
+                <i class="fas fa-heart"></i>
+                <span>K-Drama Romance</span>
+              </div>
+              <div class="pnf-mini-card">
+                <i class="fas fa-couch"></i>
+                <span>Sitcom</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <span class="pw-label">Recommendations</span>
+        <h2 class="pw-heading pw-heading--white">Actionable Insights for Content Strategy</h2>
+        <div class="pw-rec-grid">
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Bundle Within Clusters</h3>
+            <p>Feature crime/thriller and supernatural titles together in rows and promotions — their audiences already overlap heavily.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-language"></i></div>
+            <h3>Treat K-Drama as a Distinct Audience</h3>
+            <p>Queen Of Tears and It's Okay To Not Be Okay viewers don't cross over elsewhere — worth dedicated acquisition and retention content.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-lightbulb"></i></div>
+            <h3>Use Correlation Over Genre Tags</h3>
+            <p>Actual viewing-time correlation is a stronger recommendation signal than static genre labels, and should feed production and licensing decisions too.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-comment-dots"></i></div>
+            <h3>Keep Recommendations Explainable</h3>
+            <p>Showing subscribers *why* a title was suggested (e.g. "because you watched Dark") builds trust and encourages engagement with new content.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-couch"></i></div>
+            <h3>Diversify the Sitcom Slate</h3>
+            <p>Big Bang Theory's isolated audience suggests an opportunity to test more sitcom titles without cannibalising existing viewership elsewhere.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <h3>Scale the Dataset</h3>
+            <p>Expanding beyond 9 titles and 2,000 subscribers would sharpen the correlation signal and surface more nuanced micro-clusters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:yuvrajabdullah99@gmail.com">yuvrajabdullah99@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/abdullah-al-yubraj-245a96209" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/yuvrajabdullah99" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>Copyright &copy; Abdullah Al Yubraj <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

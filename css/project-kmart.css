@@ -1,0 +1,157 @@
+/* ============================================
+   Project Kmart — scoped styles
+   Inherits all .pw-* base classes from project-woolies.css
+   Kmart accent: var(--primary-color) (brand red)
+   ============================================ */
+
+/* Re-scope accent to red for all pw-accent uses on this page */
+.pw-accent          { color: var(--primary-color); }
+.pw-label           { color: var(--primary-color); }
+.pw-em              { color: var(--primary-color); }
+.back-btn:hover     { background: var(--primary-color); border-color: var(--primary-color); color: #fff; }
+.tag                { border-color: var(--primary-color); }
+.pw-tool-list li i  { color: var(--primary-color); }
+.pw-prob-card > i   { color: var(--primary-color); }
+.pw-prob-card:hover { border-color: var(--primary-color); }
+.pw-step__num       { color: var(--primary-color); }
+.pw-rec-icon        { background: rgba(31,100,201,0.12); }
+.pw-rec-icon i      { color: var(--primary-color); }
+.pw-rec-card:hover  { border-color: var(--primary-color); }
+.pw-screenshot:hover { border-color: var(--primary-color); box-shadow: 0 6px 24px rgba(31,100,201,0.12); }
+
+/* KPI cards */
+.pk-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.pk-kpi-card {
+  background: var(--card-background);
+  border: 1.5px solid var(--card-background);
+  border-radius: 10px;
+  padding: 1.5rem 1.25rem;
+  text-align: center;
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+.pk-kpi-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+}
+
+.pk-kpi-icon {
+  width: 42px;
+  height: 42px;
+  background: rgba(31,100,201,0.12);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+}
+
+.pk-kpi-icon i { color: var(--primary-color); font-size: 1rem; }
+
+.pk-kpi-value {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-color);
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+}
+
+.pk-kpi-label {
+  font-size: 0.72rem;
+  color: var(--text-color);
+  opacity: 0.55;
+  line-height: 1.4;
+}
+
+/* Screenshot placeholder */
+.pk-screenshot-placeholder {
+  border: 2px dashed var(--card-background);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+
+.pk-screenshot-placeholder:hover { border-color: var(--primary-color); }
+
+.pk-placeholder-inner {
+  display: block;
+  padding: 0;
+  background: var(--card-background);
+  text-align: center;
+}
+
+.pk-placeholder-inner i {
+  display: none;
+}
+
+.pk-placeholder-inner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Insight cards (replaces correlation pairs) */
+.pk-insights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pk-insight-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  padding: 1rem 1.25rem;
+  border-radius: 8px;
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-primary);
+  transition: border-color 0.3s;
+}
+
+.pk-insight-card:hover { border-color: var(--primary-color); }
+
+.pk-insight-num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  opacity: 0.35;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 36px;
+}
+
+.pk-insight-body strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 0.3rem;
+}
+
+.pk-insight-body p {
+  font-size: 0.78rem;
+  color: var(--text-color);
+  opacity: 0.6;
+  line-height: 1.65;
+}
+
+/* pw-heading white variant */
+.pw-heading--white { color: var(--text-color); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .pk-kpi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .pk-kpi-grid { grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+  .pk-placeholder-inner { padding: 3rem 1.5rem; }
+  .pk-kpi-value { font-size: 1.1rem; }
+}

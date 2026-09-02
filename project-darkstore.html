@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Store Shelf Planner | Abdullah Al Yubraj</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/project-woolies.css" />
+    <link rel="stylesheet" href="css/project-darkstore.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <div class="page-transition page-transition--enter"></div>
+
+    <!-- Top bar -->
+    <div class="pw-topbar">
+      <a href="index.html" class="back-btn transition-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="pw-hero pw-light">
+      <div class="pw-container">
+        <div class="pw-hero__eyebrow">Project Title</div>
+        <h1 class="pw-hero__title">Woolworths<br><span class="pw-accent">Dark Store Shelf Planner</span></h1>
+        <p class="pw-hero__sub">A data-driven tool for planning aisle layouts in Woolworths "dark stores" — analysing which product categories are bought together, then turning that analysis into an interactive, drag-and-drop floor planner.</p>
+        <div class="pw-hero__row">
+          <div class="pw-hero__tags">
+            <span class="tag">Microsoft Excel</span>
+            <span class="tag">Correlation Analysis</span>
+            <span class="tag">Retail Analytics</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Interactive Planning Tool</span>
+          </div>
+          <a href="https://github.com/yuvrajabdullah99/Woolies-Dark-Store-Shelf-Planner" target="_blank" class="btn btn-primary">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">Visual Analysis</span>
+        <h2 class="pw-heading">Dashboard Preview</h2>
+        <div class="pw-screenshots">
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/darkstore-floor-planner.png" alt="Dark Store Floor Planner" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Dark Store Floor Planner</strong>
+              <p>Drag-and-drop aisle planner seeded from the correlation clusters — each card holds a category's products, aisles can be reorganised by drag or keyboard, and a live Togetherness Score tracks how well the layout groups categories that are bought together.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/darkstore-correlation-matrix.png" alt="Category Correlation Matrix" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Category Correlation Matrix</strong>
+              <p>A 10×10 heatmap of Pearson correlation between category spend per customer, with the strongest link (Pasta ↔ Pasta Sauce, r = 0.96) called out and a diverging colour scale distinguishing categories bought together from categories that trade off.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Summary -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">At a Glance</span>
+        <h2 class="pw-heading">Dataset Overview</h2>
+        <div class="pds-kpi-grid">
+          <div class="pds-kpi-card">
+            <div class="pds-kpi-icon"><i class="fas fa-receipt"></i></div>
+            <div class="pds-kpi-value">8,903</div>
+            <div class="pds-kpi-label">Order Lines Analysed</div>
+          </div>
+          <div class="pds-kpi-card">
+            <div class="pds-kpi-icon"><i class="fas fa-users"></i></div>
+            <div class="pds-kpi-value">100</div>
+            <div class="pds-kpi-label">Customers Tracked</div>
+          </div>
+          <div class="pds-kpi-card">
+            <div class="pds-kpi-icon"><i class="fas fa-th-large"></i></div>
+            <div class="pds-kpi-value">10</div>
+            <div class="pds-kpi-label">Product Categories</div>
+          </div>
+          <div class="pds-kpi-card">
+            <div class="pds-kpi-icon"><i class="fas fa-bullseye"></i></div>
+            <div class="pds-kpi-value">85 / 100</div>
+            <div class="pds-kpi-label">Layout Togetherness Score</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Problem -->
+    <section class="pw-section pw-light">
+      <div class="pw-container pw-two-col">
+        <div>
+          <span class="pw-label">About This Project</span>
+          <h2 class="pw-heading">What Was Built & Why</h2>
+          <p class="pw-body">Dark stores are optimised for fast, efficient order picking rather than browsing, so shelf placement should be driven by data, not intuition. This project analyses real order-line data to measure how strongly product categories correlate in customer baskets, then uses that correlation as the basis for an interactive planning tool.</p>
+          <p class="pw-body">Per-customer spend was aggregated by category in Excel, then Pearson correlation was computed between every category pair to reveal which products are genuinely bought together — that matrix directly seeds the initial aisle groupings in the planner.</p>
+          <ul class="pw-tool-list">
+            <li><i class="fas fa-check-circle"></i> Pivot Tables & Category Spend Aggregation</li>
+            <li><i class="fas fa-check-circle"></i> Pearson Correlation Analysis</li>
+            <li><i class="fas fa-check-circle"></i> Correlation-Seeded Aisle Clustering</li>
+            <li><i class="fas fa-check-circle"></i> Drag-and-Drop & Keyboard-Accessible Planning</li>
+            <li><i class="fas fa-check-circle"></i> Live Togetherness Scoring</li>
+            <li><i class="fas fa-check-circle"></i> Product Search with Aisle Lookup</li>
+          </ul>
+        </div>
+        <div>
+          <span class="pw-label">Problem Statement</span>
+          <h2 class="pw-heading">The Planning Challenge</h2>
+          <div class="pw-prob-cards">
+            <div class="pw-prob-card">
+              <i class="fas fa-shipping-fast"></i>
+              <div>
+                <h3>Picking Speed, Not Browsing</h3>
+                <p>Dark stores exist purely for order fulfilment, so a layout designed for shopper browsing doesn't serve the actual picking workflow.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-question"></i>
+              <div>
+                <h3>No Data-Backed Layout Logic</h3>
+                <p>Without a clear signal for which categories are bought together, aisle groupings were essentially guesswork.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-sliders-h"></i>
+              <div>
+                <h3>Layouts Needed to Be Testable</h3>
+                <p>Category managers needed a way to try different aisle arrangements and immediately see whether a layout got better or worse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology + Key Findings -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <div class="pw-mf-grid">
+
+          <!-- Methodology -->
+          <div>
+            <span class="pw-label">Methodology</span>
+            <h2 class="pw-heading pw-heading--white">How It Was Built</h2>
+            <div class="pw-steps">
+              <div class="pw-step">
+                <div class="pw-step__num">01</div>
+                <div>
+                  <h3>Data Preparation</h3>
+                  <p>8,903 raw order lines cleaned and structured in Excel, with per-customer spend aggregated by category.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">02</div>
+                <div>
+                  <h3>Correlation Analysis</h3>
+                  <p>Pearson correlation computed between every pair of categories across all 100 customers, revealing which products are genuinely bought together.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">03</div>
+                <div>
+                  <h3>Clustering</h3>
+                  <p>The correlation matrix used to seed initial aisle groupings, placing highly-correlated categories together by default.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">04</div>
+                <div>
+                  <h3>Interactive Build</h3>
+                  <p>Built a drag-and-drop, keyboard-accessible floor planner with a live togetherness score and product search, as a self-contained web app.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div>
+            <span class="pw-label">Key Findings</span>
+            <h2 class="pw-heading pw-heading--white">Basket Correlation Insights</h2>
+            <div class="pds-insights">
+              <div class="pds-insight-card">
+                <div class="pds-insight-num">01</div>
+                <div class="pds-insight-body">
+                  <strong>Pasta & Pasta Sauce Is the Strongest Link</strong>
+                  <p>These two categories correlate at r = 0.96 — by far the strongest pairing in the dataset, and a clear must-group-together aisle decision.</p>
+                </div>
+              </div>
+              <div class="pds-insight-card">
+                <div class="pds-insight-num">02</div>
+                <div class="pds-insight-body">
+                  <strong>Baby & Snack Categories Form a Tight Cluster</strong>
+                  <p>Diapers, Wet Wipes, and Chocolates correlate strongly together (0.58–0.78) — an unexpected but consistent basket pattern worth acting on.</p>
+                </div>
+              </div>
+              <div class="pds-insight-card">
+                <div class="pds-insight-num">03</div>
+                <div class="pds-insight-body">
+                  <strong>Breakfast Staples Cluster Naturally</strong>
+                  <p>Milk, Bread, and Eggs correlate at 0.61–0.79, confirming the intuitive breakfast-basket grouping with real data.</p>
+                </div>
+              </div>
+              <div class="pds-insight-card">
+                <div class="pds-insight-num">04</div>
+                <div class="pds-insight-body">
+                  <strong>Snack Pairings Are Moderate, Not Strong</strong>
+                  <p>Nachos and Salsa correlate at just 0.48 — a sensible pairing, but far weaker than the Pasta/Pasta Sauce or baby-care clusters.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pds-mini-grid">
+              <div class="pds-mini-card">
+                <i class="fas fa-utensils"></i>
+                <span>Pasta & Sauce</span>
+              </div>
+              <div class="pds-mini-card">
+                <i class="fas fa-baby"></i>
+                <span>Baby & Snacks</span>
+              </div>
+              <div class="pds-mini-card">
+                <i class="fas fa-bread-slice"></i>
+                <span>Breakfast Staples</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <span class="pw-label">Recommendations</span>
+        <h2 class="pw-heading pw-heading--white">Actionable Insights for Store Planning</h2>
+        <div class="pw-rec-grid">
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Lock In the Pasta Aisle</h3>
+            <p>With a 0.96 correlation, Pasta and Pasta Sauce should always share an aisle regardless of other layout changes.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-baby-carriage"></i></div>
+            <h3>Test a Baby & Snacks Aisle</h3>
+            <p>The Diapers/Wet Wipes/Chocolates cluster is a genuine, data-backed pairing worth trialling even though it isn't an obvious category grouping.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-chart-line"></i></div>
+            <h3>Track the Togetherness Score Over Time</h3>
+            <p>Use the score as a simple KPI whenever the layout changes, to make sure new arrangements aren't quietly hurting pick efficiency.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-keyboard"></i></div>
+            <h3>Keep the Keyboard Path</h3>
+            <p>The Move To dropdown makes the planner usable without a mouse — worth preserving as the tool scales to more categories and pickers.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-sync-alt"></i></div>
+            <h3>Refresh the Correlation Matrix Regularly</h3>
+            <p>Buying patterns shift seasonally — recomputing correlations periodically would keep aisle groupings aligned with current behaviour.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <h3>Scale to More Categories</h3>
+            <p>Expanding beyond 10 categories and 100 customers would surface finer-grained clusters and sharpen the planner's recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:yuvrajabdullah99@gmail.com">yuvrajabdullah99@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/abdullah-al-yubraj-245a96209" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/yuvrajabdullah99" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>Copyright &copy; Abdullah Al Yubraj <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

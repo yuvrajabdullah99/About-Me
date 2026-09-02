@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackmores HR Analytics Dashboard | Abdullah Al Yubraj</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/project-woolies.css" />
+    <link rel="stylesheet" href="css/project-blackmores.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <div class="page-transition page-transition--enter"></div>
+
+    <!-- Top bar -->
+    <div class="pw-topbar">
+      <a href="index.html" class="back-btn transition-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="pw-hero pw-light">
+      <div class="pw-container">
+        <div class="pw-hero__eyebrow">Project Title</div>
+        <h1 class="pw-hero__title">Blackmores<br><span class="pw-accent">HR Analytics Dashboard</span></h1>
+        <p class="pw-hero__sub">A Tableau dashboard analysing employee attrition across 1,470 employees — surfacing which departments, education fields, and age groups see the most turnover, and how job satisfaction relates to who stays and who leaves.</p>
+        <div class="pw-hero__row">
+          <div class="pw-hero__tags">
+            <span class="tag">Tableau</span>
+            <span class="tag">Calculated Fields</span>
+            <span class="tag">HR Analytics</span>
+            <span class="tag">Attrition Analysis</span>
+            <span class="tag">Data Visualisation</span>
+            <span class="tag">Dashboard Design</span>
+          </div>
+          <a href="https://github.com/yuvrajabdullah99/Blackmores-HR-Dashboard" target="_blank" class="btn btn-primary">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">Visual Analysis</span>
+        <h2 class="pw-heading">Dashboard Preview</h2>
+        <div class="pw-screenshots">
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/blackmores-dashboard.png" alt="Blackmores HR Analytics Dashboard" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>HR Analytics Dashboard</strong>
+              <p>KPI cards for employee count, attrition count, attrition rate, active employees, and median age, alongside department-wise attrition, an age distribution histogram with adjustable bin size, a job satisfaction heatmap by role, education field-wise attrition, and gender-split attrition by age bracket — all filterable by education level.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Summary -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">At a Glance</span>
+        <h2 class="pw-heading">Dashboard KPIs</h2>
+        <div class="pbm-kpi-grid">
+          <div class="pbm-kpi-card">
+            <div class="pbm-kpi-icon"><i class="fas fa-users"></i></div>
+            <div class="pbm-kpi-value">1,470</div>
+            <div class="pbm-kpi-label">Total Employees</div>
+          </div>
+          <div class="pbm-kpi-card">
+            <div class="pbm-kpi-icon"><i class="fas fa-user-times"></i></div>
+            <div class="pbm-kpi-value">16.12%</div>
+            <div class="pbm-kpi-label">Attrition Rate (237 Employees)</div>
+          </div>
+          <div class="pbm-kpi-card">
+            <div class="pbm-kpi-icon"><i class="fas fa-user-check"></i></div>
+            <div class="pbm-kpi-value">1,233</div>
+            <div class="pbm-kpi-label">Active Employees</div>
+          </div>
+          <div class="pbm-kpi-card">
+            <div class="pbm-kpi-icon"><i class="fas fa-birthday-cake"></i></div>
+            <div class="pbm-kpi-value">36</div>
+            <div class="pbm-kpi-label">Median Employee Age</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Problem -->
+    <section class="pw-section pw-light">
+      <div class="pw-container pw-two-col">
+        <div>
+          <span class="pw-label">About This Project</span>
+          <h2 class="pw-heading">What Was Built & Why</h2>
+          <p class="pw-body">Designed and built an interactive Tableau dashboard analysing HR data across 1,470 employees to understand attrition patterns — which departments and education fields see the most turnover, how attrition varies by gender and age group, and how job satisfaction relates to who stays and who leaves.</p>
+          <p class="pw-body">Seven individual worksheets were built around specific attrition questions, then combined into a single dashboard with <em class="pw-em">Tableau calculated fields</em> for attrition rate, active employee count, and custom age binning, plus a global Education filter for slicing every view.</p>
+          <ul class="pw-tool-list">
+            <li><i class="fas fa-check-circle"></i> Tableau Calculated Fields (Attrition Rate, Active Employees)</li>
+            <li><i class="fas fa-check-circle"></i> Custom Age Binning (Adjustable Bin Size)</li>
+            <li><i class="fas fa-check-circle"></i> Department & Education Field Attrition Breakdown</li>
+            <li><i class="fas fa-check-circle"></i> Job Satisfaction Heatmap by Role</li>
+            <li><i class="fas fa-check-circle"></i> Gender-Split Attrition by Age Bracket</li>
+            <li><i class="fas fa-check-circle"></i> Global Education-Level Filter</li>
+          </ul>
+        </div>
+        <div>
+          <span class="pw-label">Problem Statement</span>
+          <h2 class="pw-heading">The Business Challenge</h2>
+          <div class="pw-prob-cards">
+            <div class="pw-prob-card">
+              <i class="fas fa-chart-pie"></i>
+              <div>
+                <h3>No Unified Attrition View</h3>
+                <p>Attrition data existed as raw employee records with no way to quickly see which departments, roles, or demographics were driving turnover.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-user-friends"></i>
+              <div>
+                <h3>Unclear Risk Segments</h3>
+                <p>Without a breakdown by age, gender, and education field, it was hard to tell which employee segments were most at risk of leaving.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-smile"></i>
+              <div>
+                <h3>Satisfaction Untracked by Role</h3>
+                <p>Job satisfaction scores weren't connected to job role, making it difficult to spot which teams needed the most attention.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology + Key Findings -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <div class="pw-mf-grid">
+
+          <!-- Methodology -->
+          <div>
+            <span class="pw-label">Methodology</span>
+            <h2 class="pw-heading pw-heading--white">How It Was Built</h2>
+            <div class="pw-steps">
+              <div class="pw-step">
+                <div class="pw-step__num">01</div>
+                <div>
+                  <h3>Data Preparation</h3>
+                  <p>Cleaned and enriched raw employee records ahead of import, deriving upstream fields for age band and attrition labelling.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">02</div>
+                <div>
+                  <h3>Tableau Calculated Fields</h3>
+                  <p>Built calculated fields inside the workbook for attrition count, attrition rate, active employees, and a custom age bin (bin size 3).</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">03</div>
+                <div>
+                  <h3>Worksheet Design</h3>
+                  <p>Built seven individual worksheets, each answering a specific attrition question — by department, education field, gender, age group, and job satisfaction.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">04</div>
+                <div>
+                  <h3>Dashboard Assembly</h3>
+                  <p>Combined all views into a single branded dashboard with a global Education filter to slice every visual by education level.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div>
+            <span class="pw-label">Key Findings</span>
+            <h2 class="pw-heading pw-heading--white">Business Insights</h2>
+            <div class="pbm-insights">
+              <div class="pbm-insight-card">
+                <div class="pbm-insight-num">01</div>
+                <div class="pbm-insight-body">
+                  <strong>R&D Drives Headcount, Sales Close Behind</strong>
+                  <p>R&D accounts for 56.12% of employees (133) and Sales for 38.82% (92), with HR a small remainder — attrition initiatives should focus where the workforce actually sits.</p>
+                </div>
+              </div>
+              <div class="pbm-insight-card">
+                <div class="pbm-insight-num">02</div>
+                <div class="pbm-insight-body">
+                  <strong>25–34 Is the Highest-Attrition Age Bracket</strong>
+                  <p>This age group accounts for 112 total attritions — split 69 female and 43 male — far ahead of every other bracket.</p>
+                </div>
+              </div>
+              <div class="pbm-insight-card">
+                <div class="pbm-insight-num">03</div>
+                <div class="pbm-insight-body">
+                  <strong>Workforce Skews Young</strong>
+                  <p>The largest single age bin is 33, with 213 employees — the workforce is concentrated in the late-20s to mid-30s range.</p>
+                </div>
+              </div>
+              <div class="pbm-insight-card">
+                <div class="pbm-insight-num">04</div>
+                <div class="pbm-insight-body">
+                  <strong>Life Sciences Leads Education Field Attrition</strong>
+                  <p>Employees from a Life Sciences background account for the most attrition by education field (89), ahead of Medical (63) and Marketing (35).</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pbm-mini-grid">
+              <div class="pbm-mini-card">
+                <i class="fas fa-flask"></i>
+                <span>R&D Department</span>
+              </div>
+              <div class="pbm-mini-card">
+                <i class="fas fa-store"></i>
+                <span>Sales Department</span>
+              </div>
+              <div class="pbm-mini-card">
+                <i class="fas fa-user-tag"></i>
+                <span>HR Department</span>
+              </div>
+              <div class="pbm-mini-card">
+                <i class="fas fa-vial"></i>
+                <span>Life Sciences</span>
+              </div>
+              <div class="pbm-mini-card">
+                <i class="fas fa-stethoscope"></i>
+                <span>Medical</span>
+              </div>
+              <div class="pbm-mini-card">
+                <i class="fas fa-bullhorn"></i>
+                <span>Marketing</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <span class="pw-label">Recommendations</span>
+        <h2 class="pw-heading pw-heading--white">Actionable Insights for Blackmores</h2>
+        <div class="pw-rec-grid">
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-user-shield"></i></div>
+            <h3>Target Early-Career Retention</h3>
+            <p>Focus retention programs on the 25–34 age bracket, which drives the largest share of attrition by a wide margin.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-flask"></i></div>
+            <h3>Review R&D and Sales Conditions</h3>
+            <p>Since these two departments hold the vast majority of headcount, even small satisfaction gains here have outsized impact on overall attrition.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-smile-beam"></i></div>
+            <h3>Investigate Low-Satisfaction Roles</h3>
+            <p>Use the job satisfaction heatmap to flag roles skewing toward low scores and prioritise manager check-ins there.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>Tailor Programs by Education Field</h3>
+            <p>Life Sciences and Medical backgrounds show the highest attrition by education field — worth understanding whether career-path expectations are being met.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-venus-mars"></i></div>
+            <h3>Monitor the Gender Gap</h3>
+            <p>Male attrition (150) outpaces female attrition (87) overall — worth tracking whether this holds across departments and roles.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-expand-arrows-alt"></i></div>
+            <h3>Expand with Tenure Data</h3>
+            <p>Layering in years-at-company and promotion history would help distinguish early-tenure flight risk from longer-term disengagement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:yuvrajabdullah99@gmail.com">yuvrajabdullah99@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/abdullah-al-yubraj-245a96209" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/yuvrajabdullah99" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>Copyright &copy; Abdullah Al Yubraj <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
