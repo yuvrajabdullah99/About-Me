@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retail Intelligence Platform | Abdullah Al Yubraj</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/project-woolies.css" />
+    <link rel="stylesheet" href="css/project-retail-intelligence.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <div class="page-transition page-transition--enter"></div>
+
+    <!-- Top bar -->
+    <div class="pw-topbar">
+      <a href="index.html" class="back-btn transition-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="pw-hero pw-light">
+      <div class="pw-container">
+        <div class="pw-hero__eyebrow">Project Title</div>
+        <h1 class="pw-hero__title">Retail Intelligence &<br><span class="pw-accent">Demand Forecasting Platform</span></h1>
+        <p class="pw-hero__sub">An end-to-end analytics platform built on a simulated nationwide Australian retail chain — 8 stores, 4 cities, 40 SKUs, two years of daily transactions. Advanced SQL, statistics, feature engineering, ML forecasting, and business insights, all served through a live FastAPI backend and an interactive Streamlit dashboard.</p>
+        <div class="pw-hero__row">
+          <div class="pw-hero__tags">
+            <span class="tag">Python</span>
+            <span class="tag">LightGBM / XGBoost</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Streamlit</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+            <a href="https://retail-intellligence-platform.streamlit.app/" target="_blank" class="btn btn-secondary" style="margin:0;">Live Dashboard <i class="fas fa-arrow-right"></i></a>
+            <a href="https://github.com/yuvrajabdullah99/Retail-Intelligence-Platform" target="_blank" class="btn btn-primary">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">Visual Analysis</span>
+        <h2 class="pw-heading">What the Data Says</h2>
+        <div class="pw-screenshots">
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-kpis.png" alt="KPI Overview and Daily Revenue Trend" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>KPI Overview</strong>
+              <p>Headline metrics — $2.37B total revenue, 1.29M units sold, 215K+ transactions — filterable by date range, city, and category, alongside an auto-generated business insight and the daily revenue trend.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-city-category.png" alt="Revenue by City and Category" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Revenue by City & Category</strong>
+              <p>Melbourne leads all four cities at roughly $700M, ahead of Brisbane, Sydney, and Adelaide. Electronics alone accounts for 83.3% of total revenue share — a heavy category skew worth digging into.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-live-forecast.png" alt="Live Forecast calling the deployed FastAPI service" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Live Forecast Demo</strong>
+              <p>This isn't a local calculation — it's a genuine HTTP request to the deployed FastAPI service, returning a point forecast plus a 90% prediction interval in real time.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-store-growth.png" alt="Monthly Revenue by Store" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Monthly Growth by Store</strong>
+              <p>All 8 stores tracked over 24 months, with a sharp, consistent spike every October — store 4 leads most months, store 8 trails throughout.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-top-products.png" alt="Top 15 Products by Revenue" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Top 15 Products</strong>
+              <p>Electronics dominates the top of the list outright — the single best-selling SKU alone brings in close to $470M, dwarfing every Apparel product on the board.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-rfm-segments.png" alt="Customer Segments and Lifetime Value" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Customer Segments (RFM)</strong>
+              <p>Loyal (30.7%) and Potential (28.9%) customers make up most of the base, but Champions — just 21.7% of customers — carry the highest average lifetime value of any segment.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/retail-intel-eda.png" alt="EDA seasonality, heatmap, and data quality summary" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>EDA & Data Quality</strong>
+              <p>Monthly seasonality and a day-of-week × month heatmap confirm weekend and October spikes, alongside a transparent outlier and missing-value audit — 4.8% of line items exceed the IQR fence, handled via winsorization before modelling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Summary -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">At a Glance</span>
+        <h2 class="pw-heading">Dashboard KPIs</h2>
+        <div class="pri-kpi-grid">
+          <div class="pri-kpi-card">
+            <div class="pri-kpi-icon"><i class="fas fa-dollar-sign"></i></div>
+            <div class="pri-kpi-value">$2,366.38M</div>
+            <div class="pri-kpi-label">Total Revenue</div>
+          </div>
+          <div class="pri-kpi-card">
+            <div class="pri-kpi-icon"><i class="fas fa-boxes"></i></div>
+            <div class="pri-kpi-value">1,285,823</div>
+            <div class="pri-kpi-label">Units Sold</div>
+          </div>
+          <div class="pri-kpi-card">
+            <div class="pri-kpi-icon"><i class="fas fa-receipt"></i></div>
+            <div class="pri-kpi-value">215,274</div>
+            <div class="pri-kpi-label">Transactions</div>
+          </div>
+          <div class="pri-kpi-card">
+            <div class="pri-kpi-icon"><i class="fas fa-shopping-basket"></i></div>
+            <div class="pri-kpi-value">$10,992</div>
+            <div class="pri-kpi-label">Avg Basket Value</div>
+          </div>
+          <div class="pri-kpi-card">
+            <div class="pri-kpi-icon"><i class="fas fa-users"></i></div>
+            <div class="pri-kpi-value">3,000</div>
+            <div class="pri-kpi-label">Unique Customers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Problem -->
+    <section class="pw-section pw-light">
+      <div class="pw-container pw-two-col">
+        <div>
+          <span class="pw-label">About This Project</span>
+          <h2 class="pw-heading">What Was Built & Why</h2>
+          <p class="pw-body">A lot of portfolio projects stop at "trained a model, got 85% accuracy." This one is built around a question retailers actually pay analysts to answer: <em class="pw-em">where should we stock more inventory, and what's it worth in dollars?</em> Every layer feeds that answer — SQL views compute the KPIs, statistical tests check whether a promotion actually moved the needle, LightGBM and XGBoost forecast demand, and the final output is a concrete profit number tied to a real stocking decision.</p>
+          <p class="pw-body">The whole pipeline is live, not just screenshots: a FastAPI service serves real-time forecasts with prediction intervals, and a Streamlit dashboard calls that same API directly for its "Live Forecast" demo — the numbers you see are computed on request, not pre-baked.</p>
+          <ul class="pw-tool-list">
+            <li><i class="fas fa-check-circle"></i> SQL Views, Window Functions & CTEs</li>
+            <li><i class="fas fa-check-circle"></i> Hypothesis Testing & A/B Analysis</li>
+            <li><i class="fas fa-check-circle"></i> Feature Engineering (Lag, Rolling, Calendar)</li>
+            <li><i class="fas fa-check-circle"></i> LightGBM & XGBoost Demand Forecasting</li>
+            <li><i class="fas fa-check-circle"></i> SHAP-Based Model Explainability</li>
+            <li><i class="fas fa-check-circle"></i> Dockerised FastAPI + Streamlit Deployment</li>
+          </ul>
+        </div>
+        <div>
+          <span class="pw-label">Problem Statement</span>
+          <h2 class="pw-heading">The Business Challenge</h2>
+          <div class="pw-prob-cards">
+            <div class="pw-prob-card">
+              <i class="fas fa-warehouse"></i>
+              <div>
+                <h3>Inventory Decisions Need Dollar Figures</h3>
+                <p>"Demand looks strong" isn't actionable — a stocking decision needs a projected profit number attached to it, not just a trend line.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <h3>Static Reports Go Stale</h3>
+                <p>A one-off analysis answers today's question. A live API and dashboard keep answering new ones as the business asks them.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-balance-scale"></i>
+              <div>
+                <h3>Forecasts Need Honest Uncertainty</h3>
+                <p>A single predicted number invites false confidence. Every forecast here ships with a 90% prediction interval alongside it.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology + Key Findings -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <div class="pw-mf-grid">
+
+          <!-- Methodology -->
+          <div>
+            <span class="pw-label">Methodology</span>
+            <h2 class="pw-heading pw-heading--white">How It Was Built</h2>
+            <div class="pw-steps">
+              <div class="pw-step">
+                <div class="pw-step__num">01</div>
+                <div>
+                  <h3>Data & SQL Layer</h3>
+                  <p>Generated two years of realistic daily transactions across 8 stores and 4 cities, then built SQL views and window-function queries to compute revenue, growth, and rolling KPIs.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">02</div>
+                <div>
+                  <h3>Statistics & EDA</h3>
+                  <p>Ran hypothesis tests and correlation analysis to validate what actually drives revenue, and audited the data for outliers (4.8% of line items) and missing values before modelling.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">03</div>
+                <div>
+                  <h3>Feature Engineering & Forecasting</h3>
+                  <p>Built lag, rolling, and calendar features, then trained LightGBM and XGBoost models to forecast daily demand per store and category, with SHAP for explainability.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">04</div>
+                <div>
+                  <h3>API & Dashboard Deployment</h3>
+                  <p>Wrapped the trained models in a FastAPI service (Dockerised, deployed to Render) and built a Streamlit dashboard that calls it live for real-time forecasts with prediction intervals.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div>
+            <span class="pw-label">Key Findings</span>
+            <h2 class="pw-heading pw-heading--white">What the Data Shows</h2>
+            <div class="pri-insights">
+              <div class="pri-insight-card">
+                <div class="pri-insight-num">01</div>
+                <div class="pri-insight-body">
+                  <strong>Electronics Dominates Revenue</strong>
+                  <p>A single category accounts for 83.3% of total revenue share, with the top-selling Electronics SKU alone generating close to $470M — a concentration worth watching closely.</p>
+                </div>
+              </div>
+              <div class="pri-insight-card">
+                <div class="pri-insight-num">02</div>
+                <div class="pri-insight-body">
+                  <strong>Consistent October Seasonality</strong>
+                  <p>Every store shows a sharp, near-identical spike in October across both years of data — a highly predictable seasonal pattern, not a one-off.</p>
+                </div>
+              </div>
+              <div class="pri-insight-card">
+                <div class="pri-insight-num">03</div>
+                <div class="pri-insight-body">
+                  <strong>Champions Carry Outsized Value</strong>
+                  <p>Champions make up only 21.7% of customers but show the highest average lifetime value of any RFM segment, well ahead of the larger Loyal and Potential groups.</p>
+                </div>
+              </div>
+              <div class="pri-insight-card">
+                <div class="pri-insight-num">04</div>
+                <div class="pri-insight-body">
+                  <strong>Weekends Drive Daily Revenue</strong>
+                  <p>The day-of-week × month heatmap shows Saturday and Sunday consistently outperforming weekdays, most dramatically during the October revenue spike.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pri-mini-grid">
+              <div class="pri-mini-card">
+                <i class="fas fa-microchip"></i>
+                <span>Electronics-Led</span>
+              </div>
+              <div class="pri-mini-card">
+                <i class="fas fa-calendar-alt"></i>
+                <span>October Seasonality</span>
+              </div>
+              <div class="pri-mini-card">
+                <i class="fas fa-crown"></i>
+                <span>Champions Segment</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <span class="pw-label">Recommendations</span>
+        <h2 class="pw-heading pw-heading--white">Actionable Insights for the Business</h2>
+        <div class="pw-rec-grid">
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-microchip"></i></div>
+            <h3>Diversify Beyond Electronics</h3>
+            <p>An 83.3% revenue concentration in one category is a real business risk — worth stress-testing what a demand shock in Electronics would do to overall revenue.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-warehouse"></i></div>
+            <h3>Pre-Position October Inventory</h3>
+            <p>Given how consistent the October spike is across every store and both years, inventory planning should treat it as a certainty, not a forecast risk.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-crown"></i></div>
+            <h3>Build a Champions Retention Program</h3>
+            <p>With Champions showing the highest LTV despite being a smaller segment, targeted retention offers here likely carry the best return of any customer initiative.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-store"></i></div>
+            <h3>Investigate the Store 8 Gap</h3>
+            <p>Store 8 trails every other location in nearly every month of data — worth understanding whether that's a location, staffing, or local demand issue.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-calendar-week"></i></div>
+            <h3>Staff for the Weekend Skew</h3>
+            <p>With Saturday and Sunday consistently outperforming weekdays, staffing and stock replenishment schedules should weight toward the weekend, not spread evenly.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-city"></i></div>
+            <h3>Study Melbourne's Lead</h3>
+            <p>Melbourne outperforms every other city by a meaningful margin — understanding what's driving that (store count, local demand, marketing mix) could inform expansion in Sydney and Adelaide.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:yuvrajabdullah99@gmail.com">yuvrajabdullah99@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/abdullah-al-yubraj-245a96209" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/yuvrajabdullah99" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>Copyright &copy; Abdullah Al Yubraj <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

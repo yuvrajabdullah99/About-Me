@@ -17,6 +17,7 @@
   border-radius: 30px;
   text-transform: uppercase;
   font-size: 0.82rem;
+  border: 2px solid transparent;
   transition: 0.3s;
 }
 
@@ -31,12 +32,13 @@
 
 .btn-secondary {
   margin: 5px 0;
-  background-color: var(--bg-secondary);
-  color: var(--bg-primary);
+  background-color: transparent;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
   position: relative;
   overflow: hidden;
   z-index: 0;
-  transition: color 0.35s ease;
+  transition: color 0.35s ease, border-color 0.35s ease;
 }
 
 .btn-secondary::before {
@@ -55,7 +57,7 @@
 }
 
 .btn-secondary:hover {
-  color: #000;
+  color: #fff;
 }
 
 /* Dark mode toggle */
@@ -164,11 +166,13 @@
   opacity: 1;
 }
 
-.card:nth-child(1) { background: #e0e0e0 url(../assets/project/kmart-logo.png) center center/cover; }
-.card:nth-child(2) { background: #ed6a02 url(../assets/project/edr-logo.jpg) center center/cover; }
-.card:nth-child(3) { background: #2d603a url(../assets/project/woolworths-darkstore-logo.png) center center/cover; }
-.card:nth-child(4) { background: #00a7b0 url(../assets/project/blackmores-logo.jpg) center center/cover; }
-.card:nth-child(5) { background: #000000 url(../assets/project/netflix-logo.png) center center/cover; }
+.card:nth-child(1) { background: #27272f url(../assets/screenshots/retail-intel-kpis.png) center 20%/cover; }
+.card:nth-child(2) { background: #05050f url(../assets/screenshots/sql-analytics-hero.png) center 15%/cover; }
+.card:nth-child(3) { background: #e0e0e0 url(../assets/project/kmart-logo.png) center center/cover; }
+.card:nth-child(4) { background: #ed6a02 url(../assets/project/edr-logo.jpg) center center/cover; }
+.card:nth-child(5) { background: #2d603a url(../assets/project/woolworths-darkstore-logo.png) center center/cover; }
+.card:nth-child(6) { background: #00a7b0 url(../assets/project/blackmores-logo.jpg) center center/cover; }
+.card:nth-child(7) { background: #000000 url(../assets/project/netflix-logo.png) center center/cover; }
 
 /* Responsive */
 @media (max-width: 768px) {

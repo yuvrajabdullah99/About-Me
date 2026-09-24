@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostgreSQL E-Commerce Analytics | Abdullah Al Yubraj</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/project-woolies.css" />
+    <link rel="stylesheet" href="css/project-sql-analytics.css" />
+    <link rel="stylesheet" href="css/enhancements.css" />
+  </head>
+  <body>
+    <div class="page-transition page-transition--enter"></div>
+
+    <!-- Top bar -->
+    <div class="pw-topbar">
+      <a href="index.html" class="back-btn transition-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+    </div>
+
+    <!-- Hero -->
+    <section class="pw-hero pw-light">
+      <div class="pw-container">
+        <div class="pw-hero__eyebrow">Project Title</div>
+        <h1 class="pw-hero__title">PostgreSQL<br><span class="pw-accent">E-Commerce Analytics Dashboard</span></h1>
+        <p class="pw-hero__sub">A simulated online retailer analysed end-to-end in PostgreSQL — 10 analytical SQL queries covering revenue trends, RFM segmentation, cohort retention, and customer lifetime value, rendered as a live dashboard with a real Postgres instance running entirely in the browser.</p>
+        <div class="pw-hero__row">
+          <div class="pw-hero__tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Window Functions</span>
+            <span class="tag">Recursive CTEs</span>
+            <span class="tag">PL/pgSQL</span>
+            <span class="tag">WebAssembly</span>
+            <span class="tag">Data Visualisation</span>
+          </div>
+          <div style="display:flex; align-items:center; gap:0.75rem; flex-wrap:wrap;">
+            <a href="https://yuvrajabdullah99.github.io/PostgreSQL-E-Commerce-Analytics/" target="_blank" class="btn btn-secondary" style="margin:0;">Live Dashboard <i class="fas fa-arrow-right"></i></a>
+            <a href="https://github.com/yuvrajabdullah99/PostgreSQL-E-Commerce-Analytics" target="_blank" class="btn btn-primary">View Project <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">Visual Analysis</span>
+        <h2 class="pw-heading">What the Data Says</h2>
+        <div class="pw-screenshots">
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-revenue-returns.png" alt="Monthly Revenue and Returns" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Monthly Revenue & Returns</strong>
+              <p>Net revenue per month with returns overlaid — the November–December holiday spike is unmistakable, and the business grows year over year, closing near $6.2M in the final month of data.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-rfm-department.png" alt="RFM Customer Segments and Revenue by Department" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>RFM Segments & Revenue by Department</strong>
+              <p>Customers scored on Recency, Frequency, and Monetary value and bucketed into named segments — "Champions" are a fraction of buyers but drive most of the revenue. Alongside it, leaf-level sales rolled up the category tree to top-level departments via a recursive CTE.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-yoy-ltv.png" alt="Year-over-Year Growth and Lifetime Value by Channel" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>YoY Growth & Lifetime Value by Channel</strong>
+              <p>Revenue per category for 2022–2024, pivoted wide with conditional aggregation — Laptops and Smartwatches lead growth. Alongside it, average customer lifetime value broken out by acquisition channel, showing where marketing dollars actually pay off.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-pareto-churn.png" alt="Pareto Analysis and Quarterly Churn Rate" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Pareto Analysis & Quarterly Churn</strong>
+              <p>Best-selling products by revenue with a cumulative percentage line testing the 80/20 rule, next to the share of active customers who didn't return the following quarter — churn holds fairly steady in the 60–68% range across every quarter measured.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-cohort-retention.png" alt="Cohort Retention Table" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Cohort Retention</strong>
+              <p>Of customers who first ordered in a given month, what percentage came back N months later — the classic cohort triangle, colour-scaled so darker cells mean higher retention.</p>
+            </div>
+          </div>
+          <div class="pw-screenshot">
+            <img src="assets/screenshots/sql-analytics-playground.png" alt="Live In-Browser SQL Playground" loading="lazy" />
+            <div class="pw-screenshot__cap">
+              <strong>Live SQL Playground</strong>
+              <p>A real PostgreSQL 16 engine compiled to WebAssembly, running directly in the browser — it builds the schema and generates ~57,000 rows of data, then lets visitors run their own SQL against it. Nothing is sent to a server.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Summary -->
+    <section class="pw-section pw-light">
+      <div class="pw-container">
+        <span class="pw-label">At a Glance</span>
+        <h2 class="pw-heading">Dataset Overview</h2>
+        <div class="psql-kpi-grid">
+          <div class="psql-kpi-card">
+            <div class="psql-kpi-icon"><i class="fas fa-users"></i></div>
+            <div class="psql-kpi-value">5,000</div>
+            <div class="psql-kpi-label">Customers</div>
+          </div>
+          <div class="psql-kpi-card">
+            <div class="psql-kpi-icon"><i class="fas fa-receipt"></i></div>
+            <div class="psql-kpi-value">14,204</div>
+            <div class="psql-kpi-label">Orders</div>
+          </div>
+          <div class="psql-kpi-card">
+            <div class="psql-kpi-icon"><i class="fas fa-list-ol"></i></div>
+            <div class="psql-kpi-value">56,816</div>
+            <div class="psql-kpi-label">Order Lines</div>
+          </div>
+          <div class="psql-kpi-card">
+            <div class="psql-kpi-icon"><i class="fas fa-dollar-sign"></i></div>
+            <div class="psql-kpi-value">$79.0M</div>
+            <div class="psql-kpi-label">Total Revenue</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Problem -->
+    <section class="pw-section pw-light">
+      <div class="pw-container pw-two-col">
+        <div>
+          <span class="pw-label">About This Project</span>
+          <h2 class="pw-heading">What Was Built & Why</h2>
+          <p class="pw-body">Most SQL portfolio pieces stop at <em class="pw-em">SELECT</em> and <em class="pw-em">GROUP BY</em>. This one leans into window functions, a recursive CTE for a full category tree, RFM scoring, cohort triangles, and a PL/pgSQL function backing a materialised view — run against three years of data that behaves like a real business, complete with seasonality, growth, and churn.</p>
+          <p class="pw-body">The dashboard itself takes it a step further: rather than static screenshots, every chart is backed by a real PostgreSQL 16 engine compiled to WebAssembly and loaded directly in the visitor's browser, alongside a free-form SQL playground for running custom queries against the live dataset.</p>
+          <ul class="pw-tool-list">
+            <li><i class="fas fa-check-circle"></i> 10 Analytical SQL Queries</li>
+            <li><i class="fas fa-check-circle"></i> Window Functions & Running Totals</li>
+            <li><i class="fas fa-check-circle"></i> Recursive CTE for Category Roll-Up</li>
+            <li><i class="fas fa-check-circle"></i> RFM Segmentation & Cohort Retention</li>
+            <li><i class="fas fa-check-circle"></i> PL/pgSQL Function + Materialised View</li>
+            <li><i class="fas fa-check-circle"></i> In-Browser Postgres via WebAssembly</li>
+          </ul>
+        </div>
+        <div>
+          <span class="pw-label">Problem Statement</span>
+          <h2 class="pw-heading">The Analytical Challenge</h2>
+          <div class="pw-prob-cards">
+            <div class="pw-prob-card">
+              <i class="fas fa-database"></i>
+              <div>
+                <h3>Beyond Basic Aggregation</h3>
+                <p>Simple GROUP BY queries can't answer questions like "which customers came back three months later" or "how does revenue roll up a category tree" — those need window functions and recursion.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-desktop"></i>
+              <div>
+                <h3>Showing the Work, Not Just the Result</h3>
+                <p>A static chart doesn't prove the SQL behind it is real. Every chart on the live dashboard links back to the exact query that produced it.</p>
+              </div>
+            </div>
+            <div class="pw-prob-card">
+              <i class="fas fa-server"></i>
+              <div>
+                <h3>No Backend to Host or Break</h3>
+                <p>A live SQL demo normally needs a hosted database and a backend to guard it. Running Postgres client-side removes that entirely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Methodology + Key Findings -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <div class="pw-mf-grid">
+
+          <!-- Methodology -->
+          <div>
+            <span class="pw-label">Methodology</span>
+            <h2 class="pw-heading pw-heading--white">How It Was Built</h2>
+            <div class="pw-steps">
+              <div class="pw-step">
+                <div class="pw-step__num">01</div>
+                <div>
+                  <h3>Schema & Synthetic Data</h3>
+                  <p>Designed a normalised PostgreSQL schema, then generated three years of realistic transaction data — 5,000 customers, 14,204 orders, 56,816 order lines — with genuine seasonality and churn baked in.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">02</div>
+                <div>
+                  <h3>Ten Analytical Queries</h3>
+                  <p>Wrote ten SQL queries spanning window functions, conditional aggregation, cohort analysis, RFM scoring, and a recursive CTE for category hierarchy roll-ups.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">03</div>
+                <div>
+                  <h3>PL/pgSQL & Materialised Views</h3>
+                  <p>Backed the RFM segmentation with a genuine PL/pgSQL function and a materialised view, rather than recomputing scores on every read.</p>
+                </div>
+              </div>
+              <div class="pw-step">
+                <div class="pw-step__num">04</div>
+                <div>
+                  <h3>In-Browser Postgres Dashboard</h3>
+                  <p>Compiled PostgreSQL 16 to WebAssembly to run entirely client-side, built the schema and data on page load (~7 seconds), and wired every chart plus a free-form SQL editor directly to it — no server involved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Findings -->
+          <div>
+            <span class="pw-label">Key Findings</span>
+            <h2 class="pw-heading pw-heading--white">What the Data Shows</h2>
+            <div class="psql-insights">
+              <div class="psql-insight-card">
+                <div class="psql-insight-num">01</div>
+                <div class="psql-insight-body">
+                  <strong>Strong Holiday Seasonality</strong>
+                  <p>Revenue spikes sharply every November–December, with the business also growing year over year — the final month of data closes near $6.2M, its highest point yet.</p>
+                </div>
+              </div>
+              <div class="psql-insight-card">
+                <div class="psql-insight-num">02</div>
+                <div class="psql-insight-body">
+                  <strong>Champions Drive Disproportionate Revenue</strong>
+                  <p>RFM segmentation shows "Champions" make up a clear minority of the customer base but account for the largest single share of total revenue.</p>
+                </div>
+              </div>
+              <div class="psql-insight-card">
+                <div class="psql-insight-num">03</div>
+                <div class="psql-insight-body">
+                  <strong>Display Ads Produce the Highest-Value Customers</strong>
+                  <p>Average lifetime value by acquisition channel peaks for customers first acquired via display advertising (~$20K), ahead of social, paid search, referral, and email.</p>
+                </div>
+              </div>
+              <div class="psql-insight-card">
+                <div class="psql-insight-num">04</div>
+                <div class="psql-insight-body">
+                  <strong>Churn Is High and Persistent</strong>
+                  <p>Quarterly churn holds in the 60–68% range across nearly every quarter measured — most customers who buy once do not return the following quarter, regardless of season.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="psql-mini-grid">
+              <div class="psql-mini-card">
+                <i class="fas fa-window-restore"></i>
+                <span>Window Functions</span>
+              </div>
+              <div class="psql-mini-card">
+                <i class="fas fa-sitemap"></i>
+                <span>Recursive CTE</span>
+              </div>
+              <div class="psql-mini-card">
+                <i class="fas fa-users-cog"></i>
+                <span>RFM Segmentation</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="pw-section pw-dark">
+      <div class="pw-container">
+        <span class="pw-label">Recommendations</span>
+        <h2 class="pw-heading pw-heading--white">Actionable Insights for the Business</h2>
+        <div class="pw-rec-grid">
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-crown"></i></div>
+            <h3>Protect the Champions Segment</h3>
+            <p>Since Champions drive an outsized share of revenue from a small customer base, retention offers targeted specifically at this segment likely have the highest ROI of any lever available.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-bullhorn"></i></div>
+            <h3>Shift Budget Toward Display</h3>
+            <p>With display-acquired customers showing the highest average LTV, testing an increased display budget — and tracking whether that LTV edge holds at higher spend — is a natural next experiment.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-redo"></i></div>
+            <h3>Target the First-Repeat-Purchase Gap</h3>
+            <p>With churn consistently above 60% quarter to quarter, the biggest lever is likely getting a customer to their second purchase at all — a post-purchase win-back flow would directly attack this number.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-boxes"></i></div>
+            <h3>Double Down on Growth Categories</h3>
+            <p>Laptops and Smartwatches are growing fastest year over year — worth checking whether marketing spend and inventory planning already reflect that shift.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Plan Inventory Around the Holiday Spike</h3>
+            <p>The November–December surge is large and consistent enough to justify dedicated demand planning, rather than treating it as a one-off each year.</p>
+          </div>
+          <div class="pw-rec-card">
+            <div class="pw-rec-icon"><i class="fas fa-chart-pie"></i></div>
+            <h3>Extend the Pareto Analysis</h3>
+            <p>The 80/20 test on top products is a natural jumping-off point for a formal ABC inventory classification, tiering stocking and reorder rules by product importance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="container">
+        <a href="mailto:yuvrajabdullah99@gmail.com">yuvrajabdullah99@gmail.com</a>
+        <div class="social">
+          <a href="https://www.linkedin.com/in/abdullah-al-yubraj-245a96209" target="_blank"><img src="./assets/linkedin-icon.svg" alt="LinkedIn" /></a>
+          <a href="https://github.com/yuvrajabdullah99" target="_blank"><img src="./assets/github-icon.svg" alt="GitHub" /></a>
+        </div>
+        <p>Copyright &copy; Abdullah Al Yubraj <span id="datee"></span>, All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>
